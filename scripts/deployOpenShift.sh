@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo $(date) " - Starting Script"
+echo $@ > para_deployOpenShift.txt
 
 set -e
 
