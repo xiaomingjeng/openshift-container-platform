@@ -226,7 +226,7 @@ runuser -l $SUDOUSER -c "ansible all -b -m service -a \"name=NetworkManager stat
 # Initiating installation of OpenShift Container Platform using Ansible Playbook
 echo $(date) " - Installing OpenShift Container Platform via Ansible Playbook"
 
-runuser -l $SUDOUSER -c "ansible-playbook /usr/share/ansible/openshift-ansible/playbooks/byo/config.yml -e openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability,package_availability,package_version,openshift_health_check"
+runuser -l $SUDOUSER -c "ansible-playbook /usr/share/ansible/openshift-ansible/playbooks/byo/config.yml"
 
 if [ $? -eq 0 ]
 then
