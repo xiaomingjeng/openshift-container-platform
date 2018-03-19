@@ -1,6 +1,8 @@
 #!/bin/bash
 echo $(date) " - Starting Bastion Prep Script"
 
+echo $@ > para_bastionPrep.txt
+
 USERNAME_ORG=$1
 PASSWORD_ACT_KEY="$2"
 POOL_ID=$3
