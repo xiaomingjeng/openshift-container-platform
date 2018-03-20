@@ -125,6 +125,7 @@ console_port=443
 openshift_cloudprovider_kind=azure
 osm_default_node_selector='type=app'
 openshift_disable_check=memory_availability,docker_image_availability,package_version
+#openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability,package_availability,package_version,openshift_health_check
 
 # default selectors for router and registry services
 openshift_router_selector='type=infra'
